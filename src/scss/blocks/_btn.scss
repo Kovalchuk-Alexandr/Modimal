@@ -1,0 +1,83 @@
+.btn, a.btn {
+    display: inline-block;
+
+    padding: 8px;
+    min-width: 185px;
+    height: 40px;
+
+    background: var(--white);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--black);
+
+    transition: all 0.2s ease-in;
+
+    &:hover  {
+        // opacity: 0.9;
+        background: var(--neutral-grayededed);
+        transform: scale(0.97);
+
+        @include mobile {
+            background: var(--neutral-grayededed);
+            // background: var(--white);
+            transform: unset;
+        }
+    }
+    
+    @include mobile {
+        padding: 8px 9px;
+        min-width: unset;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+
+    &--small {
+        width: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: var(--primary-primary-600);
+    }
+
+    &--mobile-wide {
+        @include mobile {
+            min-width: unset;
+            width: 100%;
+            padding: 8px 16px;
+            text-align: start;
+        }
+    }
+}
+
+.btn-outline,
+ a.btn-outline {
+    display: inline-block;
+    border: 1px solid var(--primary-primary-600);
+    padding: 8px ;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    // line-height: 1.71;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-primary-600);
+
+    transition: all 0.2s ease-in;
+    
+    &:hover {
+        color: var(--primary-primary-700);
+        border: 1px solid var(--primary-primary-700);
+        background: var(--neutral-grayededed);
+    }
+    
+}

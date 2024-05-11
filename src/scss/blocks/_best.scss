@@ -1,0 +1,23 @@
+.best__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 24px;
+
+    @include mobile {
+        margin-bottom: 8px;
+    }
+}
+
+.best__link {
+    @include mobile {
+        display: none;
+    }
+}
+
+.best__cards {
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap: 24px;
+}
