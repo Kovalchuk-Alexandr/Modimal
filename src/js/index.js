@@ -12,6 +12,11 @@ mobileNav();
 import accordion from "./modules/accordion.js";
 accordion();
 
+import favorite from "./modules/favorite.js";
+favorite();
+
+
+
 const swiper = new Swiper(".swiper", {
     // Optional parameters
     // loop: true,
